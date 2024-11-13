@@ -1,13 +1,13 @@
 pipeline {
     agent any
     stages {
-        stage('Checkout Client-app Code') {
+        stage('Checkout repo') {
             steps {
                 git 'https://github.com/mahmouuud230/Abstract.git'
             }
         }
 
-        stage('Build Docker Image') {
+        stage('Print the file content') {
             steps {
                 sh 'cat text'
            

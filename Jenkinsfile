@@ -13,7 +13,14 @@ pipeline {
            
             }
         }
-        
+
+        stage('Cleaning Jenkins Workspace') {
+            steps {
+                deleteDir()
+           
+            }
+        }
+    
 
     }
 }
